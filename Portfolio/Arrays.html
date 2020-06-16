@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Nathan Lu's Portfolio">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Arrays.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    
+    
+    
+    
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html"
+}</script>
+    <meta property="og:title" content="Arrays">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  </head>
+  <body class="u-body"><header class="u-align-center-xs u-clearfix u-grey-70 u-header u-header" id="sec-2155"><img src="images/angymona2.jpg" alt="" class="u-absolute-hcenter-xs u-expanded-height u-image u-image-default u-image-1" data-image-width="905" data-image-height="509" data-href="Home.html"><nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0;">
+          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-2-light-1 u-text-white" href="#">
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-2-light-1 u-text-white" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-2-light-1 u-text-white" href="Projects.html" style="padding: 10px 20px;">Projects</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">Grade 12 ICS ISP</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-2-light-1 u-text-white" href="Tutorials.html" style="padding: 10px 20px;">Tutorials</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">OOP</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Arrays.html">Arrays</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="ArrayLists.html">ArrayLists</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Search-and-Sort.html">Search and Sort</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Sequential-Search.html">Sequential Search</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Binary-Search.html">Binary Search</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Selection-Sort.html">Selection Sort</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Merge-Sort.html">Merge Sort</a>
+</li></ul>
+</div>
+</li></ul>
+</div>
+</li></ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-menu-close"></div>
+            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-5"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Projects.html" style="padding: 10px 20px;">Projects</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-6"><li class="u-nav-item"><a class="u-button-style u-nav-link">Grade 12 ICS ISP</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Tutorials.html" style="padding: 10px 20px;">Tutorials</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-7"><li class="u-nav-item"><a class="u-button-style u-nav-link">OOP</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Arrays.html">Arrays</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="ArrayLists.html">ArrayLists</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Search-and-Sort.html">Search and Sort</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-8"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Sequential-Search.html">Sequential Search</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Binary-Search.html">Binary Search</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Selection-Sort.html">Selection Sort</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Merge-Sort.html">Merge Sort</a>
+</li></ul>
+</div>
+</li></ul>
+</div>
+</li></ul>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav><h1 class="u-custom-font u-font-montserrat u-text u-title u-text-1">
+        <a href="Home.html">Nathan Lu's Portfolio</a>
+      </h1></header> 
+    <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="1280" data-image-height="640" id="sec-a361">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-title u-text-1">Arrays</h1>
+        <p class="u-large-text u-text u-text-default u-text-variant u-text-2">Everything important about arrays, covered here.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-palette-1-dark-2 u-section-2" id="sec-cf34">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h3 class="u-text u-text-1">Array Code:</h3>
+        <p class="u-text u-text-default u-text-2">Code for creating and manipulating arrays:</p>
+        <p class="u-custom-font u-font-courier-new u-text u-text-3">String [] array = new String [10]; // creating a String array of size 10<br>array[0] = "First"; // setting the first entry to "First"<br>array[9] = "Last"; // setting the last entry to "Last"<br>array[4] = array[0]+array[9] // setting a middle entry to "FirstLast"<br>int [][] array2D = new int [4][4] // creating a 4*4 array of integers<br>array2D[1] = new int [5]; // now the array row lengths are: 4, 5, 4, 4<br>array2D[1][4] = 16; // setting a value in the 2D array to 16
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-68e3">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-custom-font u-heading-font u-text u-text-default u-text-1">Arrays are a very useful tool in programming. They allow you to store multiple, related values, which is helpful, especially when the amount of these related values can vary. They also allow you to perform operations on these values quickly. To declare one, use the following syntax:<br>
+        </p>
+        <p class="u-align-center u-custom-font u-font-courier-new u-text u-text-default u-text-2"><b>&lt;data type&gt; [] arrayName = new &lt;same data type&gt; [&lt;size of array&gt;];</b>
+        </p>
+        <p class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-3">You can replace &lt;data type&gt; (<b>without </b>the &lt;&gt;, of course) with any data type such as int, double, String, a class, or even another array (which we will discuss later in this section). Notice that you have to put the square brackets [] in the declaration, as this specifies that the variable will be an array as opposed to a variable. The square brackets are also used to initialize the array. Inside these brackets you should specify the size of the array, which should be an integer.&nbsp;<br>
+          <br>&nbsp;Depending on the type, the values of the array, once initialized should have default values. For numbers, like int or double, the value is 0 (or 0.0). For Strings, the default value is a blank String (“”). For anything else, it’s null. Be careful with default values, especially the null ones! <br>
+          <br>At this point, we can treat each individual element in the array as its own variable. To access an element, we need to specify the name of the array as well as the location of the element: arrayName[&lt;index&gt;]. Note that indices start from 0, so if we want to access the third element in the array, we need to type 2 in place of &lt;index&gt;. For example, if we had an array like this:<br>
+        </p>
+        <img src="images/ArrayCapture11.JPG" alt="" class="u-image u-image-default u-image-1">
+        <p class="u-align-left u-custom-font u-heading-font u-text u-text-default u-text-4">If we want to access the third element, we would need to type arrayName[2]. Notice how the indices start from 0 and not 1. If we wanted the indices to start at 1, we would have to add a filler value at the beginning. For example, if we wanted the array to be one based (indices start at 1) as opposed to being zero based (indices start at 0), we would have to initialize the array with one more element than the actual length of the array. However, if we already initialized the array to be zero based, then we would have to redefine the array; we can’t change the sizes of an array! A one based version of the previous array would look like this:<br>
+          <br>
+        </p>
+        <img src="images/ArrayCapture2.JPG" alt="" class="u-image u-image-default u-image-2" data-image-width="1380" data-image-height="152">
+        <p class="u-align-left u-custom-font u-heading-font u-text u-text-default u-text-5">Notice that the value at index 0 is 0. That is the default value for numbers, and since this indice’s purpose is to prop up the array to start at 1, it should stay at 0. <br>
+          <br> Aside from calling the elements in the array, we can also find the size of the array with arrayName.length. Each array has the length attribute, which stores how many elements are in the array. Be aware that this attribute stores the actual number of elements in the array (which is equal to the number you input in the square brackets when you initialize the array), not the last index in the array. For example, the zero based version of our example would have length store 6, since there are 6 elements in the array, although the index count only goes up to 5. The one based version would have length store 7, since there is one extra filler element.&nbsp;<br>
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-1d3f">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-1">We can also have arrays with multiple dimensions (this is the storing arrays in arrays mentioned earlier). To do this, we can just add more pairs of square brackets in the declaration and initialization parts when creating an array. Here is an example of declaring a 2D array.</p>
+        <p class="u-align-center u-custom-font u-font-courier-new u-text u-text-default u-text-2"><b>&lt;data type&gt; [][] arrayName = new &lt;same data type&gt; [&lt;number of rows&gt;][&lt;number of columns&gt;];</b>
+        </p>
+        <p class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-3">We can think about arrays with multiple dimensions like “rectangles” in different dimensions. With 1D arrays, there is only 1 dimension, length, thus the “rectangles” is a line. With 2D arrays, there are 2 dimensions, meaning each index in the length from a 1D array has its own number of indices, making a “rectangle” of indices. With 3D arrays, each index in the 2D array has its won number of indices, making a “rectangular prism” of indices. This can continue to any number of dimensions, but it’s unlikely that we would need anything past the second dimension. <br> If we created a 2D array with the following syntax, the array would look like the table below:&nbsp;<br>
+        </p>
+        <p class="u-align-center u-custom-font u-font-courier-new u-text u-text-default u-text-4"><b>int [][] arrayName = new int [3][3];</b>
+        </p>
+        <img src="images/ArrayCapture3.JPG" alt="" class="u-image u-image-default u-image-1" data-image-width="1267" data-image-height="290">
+        <p class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-5">When we want to access an index in this 2D array, we would specify the row to access first before we specify the column. For example, if we wanted to change the value at row 0 and column 1 to 1, we would type this: arrayName[0][1]=1;. This would turn the array into this:</p>
+        <img src="images/ArrayCapture4.JPG" alt="" class="u-image u-image-default u-image-2" data-image-width="1316" data-image-height="328">
+        <p class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-6">If we typed arrayName[1][0]=1; instead, the array would turn into this:</p>
+        <img src="images/ArrayCapture5.JPG" alt="" class="u-image u-image-default u-image-3" data-image-width="1336" data-image-height="299">
+        <p class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-7">Here’s an interesting fact about arrays of multiple dimensions: despite the repeated mentions of them being “rectangles” in this tutorial, each row can actually have a different length! Since arrays of multiple dimensions are just arrays of arrays (of, possibly, more arrays, but we’ll stick to 2 dimensions), each array can have its own array of varying lengths. To change the length of an array, simply type only the row you want altered, as opposed to both the row and the column, and then define it with a different length. For example, if I wanted to redefine the 1st row in the 2D array used in the example above to have a length of 4, I would type this:</p>
+        <p class="u-align-center u-custom-font u-font-courier-new u-text u-text-default u-text-8"><b>arrayName[1] = new int [4];</b>
+        </p>
+        <img src="images/ArrayCapture6.JPG" alt="" class="u-image u-image-default u-image-4" data-image-width="1357" data-image-height="298">
+        <p class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-9">Notice that everything in row 1 got set back to 0, the default value. That is because the new declaration redefined the array.</p>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6728"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Contact me:<br>Email: nathanymlu@gmail.com<br>Phone: 647-763-0702
+        </p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>HTML Template</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>Nicepage</span>
+      </a>. 
+    </section>
+  </body>
+</html>

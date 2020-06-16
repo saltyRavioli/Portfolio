@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Nathan Lu's Portfolio">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Sequential Search</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Sequential-Search.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    
+    
+    
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html"
+}</script>
+    <meta property="og:title" content="Sequential Search">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  </head>
+  <body class="u-body"><header class="u-align-center-xs u-clearfix u-grey-70 u-header u-header" id="sec-2155"><img src="images/angymona2.jpg" alt="" class="u-absolute-hcenter-xs u-expanded-height u-image u-image-default u-image-1" data-image-width="905" data-image-height="509" data-href="Home.html"><nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0;">
+          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-2-light-1 u-text-white" href="#">
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-2-light-1 u-text-white" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-2-light-1 u-text-white" href="Projects.html" style="padding: 10px 20px;">Projects</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">Grade 12 ICS ISP</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-2-light-1 u-text-white" href="Tutorials.html" style="padding: 10px 20px;">Tutorials</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">OOP</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Arrays.html">Arrays</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="ArrayLists.html">ArrayLists</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Search-and-Sort.html">Search and Sort</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Sequential-Search.html">Sequential Search</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Binary-Search.html">Binary Search</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Selection-Sort.html">Selection Sort</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Merge-Sort.html">Merge Sort</a>
+</li></ul>
+</div>
+</li></ul>
+</div>
+</li></ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-menu-close"></div>
+            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-5"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Projects.html" style="padding: 10px 20px;">Projects</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-6"><li class="u-nav-item"><a class="u-button-style u-nav-link">Grade 12 ICS ISP</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Tutorials.html" style="padding: 10px 20px;">Tutorials</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-7"><li class="u-nav-item"><a class="u-button-style u-nav-link">OOP</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Arrays.html">Arrays</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="ArrayLists.html">ArrayLists</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Search-and-Sort.html">Search and Sort</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-8"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Sequential-Search.html">Sequential Search</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Binary-Search.html">Binary Search</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Selection-Sort.html">Selection Sort</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Merge-Sort.html">Merge Sort</a>
+</li></ul>
+</div>
+</li></ul>
+</div>
+</li></ul>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav><h1 class="u-custom-font u-font-montserrat u-text u-title u-text-1">
+        <a href="Home.html">Nathan Lu's Portfolio</a>
+      </h1></header> 
+    <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="1280" data-image-height="640" id="sec-484f">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-title u-text-1">Sequential Search</h1>
+        <p class="u-large-text u-text u-text-default u-text-variant u-text-2">A simple way to search through and array.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-palette-1-dark-2 u-section-2" id="sec-a282">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h3 class="u-text u-text-default u-text-1">Sample code for sequential sort:</h3>
+        <p class="u-custom-font u-font-courier-new u-text u-text-default u-text-2">public int sequentialSort(int [] array, int value) {<br>&nbsp; &nbsp; for (int index=0; index&lt;array.length; index++) { //loop through all elements to find the target value<br>&nbsp; &nbsp; &nbsp; &nbsp; if (array[index] == value) { //if the current value being searched is equal to the target value<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return index; //return the index of the current value<br>&nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp; return -1; //if not found, return this<br>}
+        </p>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-section-3" id="sec-ddce">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">Sequential search is simple. Given a value to search, the sort simply traverses from left to right and checks every index to see if it matches the value being searched for. If an index does match, that index is returned, indicating that there is a value in that index. If the index doesn’t match, a value indicating that the value being searched for is not in the array is returned. Said value is usually -1, since it is impossible for an array to have an index of -1. Here’s a simple example, an array of length 5: <br>
+        </p>
+        <img src="images/SequentialSearchCapture1.JPG" alt="" class="u-image u-image-default u-image-1" data-image-width="1394" data-image-height="159">
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-2">If we use sequential search to search for 3, we would perform the following operations:</p>
+        <img src="images/SequentialSearchCapture2.JPG" alt="" class="u-image u-image-default u-image-2" data-image-width="1419" data-image-height="153">
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-3">The search is currently checking index 0. It finds that 6 is not equal to 3, so it moves on.&nbsp;<br>
+        </p>
+        <img src="images/SequentialSearchCapture3.JPG" alt="" class="u-image u-image-default u-image-3">
+        <p class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-4">The search is currently checking index 1. It finds that 3 is equal to 3, so it returns 1, the index where 3 is found. Note that there is another 3 at index 5, but that wasn’t returned because a value of 3 was already found in index 1. <br>
+          <br>Since the search can potentially span the entire array, the time complexity for this search is <b>O(N)</b>. This means that the number of operations this process takes can go up to N, which is the size of the array.<br>
+        </p>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6728"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Contact me:<br>Email: nathanymlu@gmail.com<br>Phone: 647-763-0702
+        </p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>HTML Template</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>Nicepage</span>
+      </a>. 
+    </section>
+  </body>
+</html>
